@@ -1,0 +1,19 @@
+{
+    "pict_list_product":
+    {
+        "selector":"inventory-item-sauce-labs-backpack-img",
+        "assertion":"Sauce Labs Backpack"
+    },
+    "name_list_product":
+    {
+        "selector":"inventory-item-name",
+        "name":"Sauce Labs Backpack",
+        "assertion":"Sauce Labs Backpack"
+    },
+    "visual_user":
+    {
+        "username":"visual_user",
+        "password":"secret_sauce",
+        "assertion":"Products"
+    }
+}
