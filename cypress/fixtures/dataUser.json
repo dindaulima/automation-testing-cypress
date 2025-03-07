@@ -1,0 +1,39 @@
+{
+    "standard_user":
+    {
+        "username":"standard_user",
+        "password":"secret_sauce",
+        "assertion":"Products"
+    },
+    "locked_out_user":
+    {
+        "username":"locked_out_user",
+        "password":"secret_sauce",
+        "assertion":"Sorry, this user has been locked out"
+    },
+    "problem_user":
+    {
+        "username":"problem_user",
+        "password":"secret_sauce",
+        "assertion":"Products"
+
+    },
+    "performance_glitch_user":
+    {
+        "username":"performance_glitch_user",
+        "password":"secret_sauce",
+        "assertion":"Swag Labs"
+    },
+    "error_user":
+    {
+        "username":"error_user",
+        "password":"secret_sauce",
+        "assertion":"Products"
+    },
+    "visual_user":
+    {
+        "username":"visual_user",
+        "password":"secret_sauce",
+        "assertion":"Products"
+    }
+}

@@ -1,0 +1,31 @@
+Test Skenario
+Login
+1. User Login as Standard User
+2. User Locked Out
+
+Product
+1. User mengakses detail product dengan klik gambar di list product
+2. User mengakses detail product dengan klik nama product di list product
+3. User kembali ke halaman list dari detail product
+4. User mengakses detail product dengan klik gambar di halaman detail cart
+5. User mengakses detail product dengan klik nama product di halaman detail cart
+6. User mengakses detail product dengan klik nama product di halaman checkout overview
+
+Cart
+1. User Add product ke cart dari halaman list product
+2. User Add prodcut ke cart dari halaman detail product
+3. User Remove product dari cart di halaman list product
+4. User Remove product dari cart di halaman detail product
+5. User mengakses detail cart
+6. User Remove product dari cart di halaman detail cart
+6. User kembali ke halaman list product dari detail cart
+
+Checkout
+1. User checkoout product dari halaman detail cart
+2. User tidak bisa checkout product jika tidak ada product yang dutambahkan pada cart
+
+Payment
+1. User menambahkan data pembayaran
+2. User menyelesaikan pembayaran
+3. User membatalkan pembayaran
+4. User kembali ke halaman list product setelah menyelesaikan pembayaran
