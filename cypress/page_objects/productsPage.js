@@ -1,11 +1,11 @@
 class ProductsPage {
-    clickImage(selector) {
-      cy.get(`[data-test="${selector}"]`)
+    clickImage(productItem) {
+      cy.get(`[data-test="inventory-item-${productItem}-img"]`)
         .should("be.visible")
         .click();
     }
-    clickProductName(selector, productName) {
-      cy.get(`[data-test="${selector}"]`)
+    clickProductName(productName) {
+      cy.get(`[data-test="inventory-item-name"]`)
         .should("be.visible")
         .contains(productName)
         .click();

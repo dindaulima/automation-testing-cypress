@@ -1,0 +1,12 @@
+{
+    "add_from_list":
+    {
+        "item":"sauce-labs-backpack",
+        "assertion":"Remove"
+    },
+    "add_from_detail":
+    {
+        "item":"Sauce Labs Backpack",
+        "assertion":"Remove"
+    }
+}

@@ -1,24 +1,24 @@
 Test Skenario
 Login
-1. User Login as Standard User
-2. User Locked Out
+1. User Login as Standard User [DONE]
+2. User Locked Out [DONE]
 
 Product
-1. User mengakses detail product dengan klik gambar di list product
-2. User mengakses detail product dengan klik nama product di list product
-3. User kembali ke halaman list dari detail product
+1. User mengakses detail product dengan klik gambar di list product [DONE]
+2. User mengakses detail product dengan klik nama product di list product [DONE]
+3. User kembali ke halaman list dari detail product [DONE]
 4. User mengakses detail product dengan klik gambar di halaman detail cart
 5. User mengakses detail product dengan klik nama product di halaman detail cart
 6. User mengakses detail product dengan klik nama product di halaman checkout overview
 
 Cart
 1. User Add product ke cart dari halaman list product
-2. User Add prodcut ke cart dari halaman detail product
+2. User Add product ke cart dari halaman detail product
 3. User Remove product dari cart di halaman list product
 4. User Remove product dari cart di halaman detail product
 5. User mengakses detail cart
 6. User Remove product dari cart di halaman detail cart
-6. User kembali ke halaman list product dari detail cart
+7. User kembali ke halaman list product dari detail cart
 
 Checkout
 1. User checkoout product dari halaman detail cart
