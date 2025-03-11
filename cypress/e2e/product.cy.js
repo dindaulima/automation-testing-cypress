@@ -30,15 +30,37 @@ describe('Detail Product', () => {
     Cypress.Product.backToListProduct();
     Cypress.Product.assertionDetail(product.assertion);
   })
-//   it('4. User mengakses detail product dengan klik gambar di halaman detail cart', () => {
-//     cy.userLogin(user.username, user.password, user.assertion);
-//   })
-//   it('5. User mengakses detail product dengan klik nama product di halaman detail cart', () => {
-//     cy.userLogin(user.username, user.password, user.assertion);
-//   })
-//   it('6. User mengakses detail product dengan klik nama product di halaman checkout overview', () => {
-//     cy.userLogin(user.username, user.password, user.assertion);
-//   })
+  it('4. User Add product ke cart dari halaman list product', () => {
+    product = dataProduct.add_from_list;
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.addFromList(product.item);
+    Cypress.Product.clickImage(product.item);
+    Cypress.Product.assertionDetail(product.assertion);
+  })
+  it('5. User Add product ke cart dari halaman detail product', () => {
+    product = dataProduct.add_from_detail;
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.clickProductName(product.item);
+    Cypress.Product.addFromDetail();
+    Cypress.Product.assertionDetail(product.assertion);
+  })
+  it('6. User Remove product dari cart di halaman list product', () => {
+    product = dataProduct.remove_from_list;
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.addFromList(product.item);
+    Cypress.Product.removeFromList(product.item);
+    Cypress.Product.clickImage(product.item);
+    Cypress.Product.assertionDetail(product.assertion);
+  })
+  it('7. User Remove product dari cart di halaman detail product', () => {
+    product = dataProduct.remove_from_detail;
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.clickProductName(product.item);
+    Cypress.Product.addFromDetail();
+    Cypress.Product.clickProductName(product.item);
+    Cypress.Product.removeFromDetail();
+    Cypress.Product.assertionDetail(product.assertion);
+  })
 })
 
    
