@@ -11,39 +11,31 @@ describe('Detail Product', () => {
         dataCart = data
     })
   })
-  it('1. User Add product ke cart dari halaman list product', () => {
-    cart = dataCart.add_from_list;
+  it('1. User mengakses detail cart', () => {
+    cart = dataCart.go_to_cart;
     cy.userLogin(user.username, user.password, user.assertion);
-    Cypress.Cart.addFromList(cart.item);
-    Cypress.Product.clickImage(cart.item);
+    Cypress.Cart.detailCart();
     Cypress.Cart.assertionDetail(cart.assertion);
   })
-  it('2. User Add product ke cart dari halaman detail product', () => {
-    cart = dataCart.add_from_detail;
+  it('2. User mengakses detail product dari halaman detail cart', () => {
+    cart = dataCart.detail_product_from_cart;
     cy.userLogin(user.username, user.password, user.assertion);
     Cypress.Product.clickProductName(cart.item);
-    Cypress.Cart.addFromDetail();
+    Cypress.Product.addFromDetail();
+    Cypress.Cart.detailCart();
+    Cypress.Product.clickProductName(cart.item);
     Cypress.Cart.assertionDetail(cart.assertion);
   })
-  it('3. User Remove product dari cart di halaman list product', () => {
-    cart = dataCart.add_from_detail;
+  it('3. User Remove product dari cart di halaman detail cart', () => {
+    cart = dataCart.remove_product_from_cart;
     cy.userLogin(user.username, user.password, user.assertion);
-  })
-  it('4. User Remove product dari cart di halaman detail product', () => {
-    cart = dataCart.add_from_detail;
-    cy.userLogin(user.username, user.password, user.assertion);
-  })
-  it('5. User mengakses detail cart', () => {
-    cart = dataCart.add_from_detail;
-    cy.userLogin(user.username, user.password, user.assertion);
-  })
-  it('6. User Remove product dari cart di halaman detail cart', () => {
-    cart = dataCart.add_from_detail;
-    cy.userLogin(user.username, user.password, user.assertion);
-  })
-  it('7. User kembali ke halaman list product dari detail cart', () => {
-    cart = dataCart.add_from_detail;
-    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.clickImage(cart.item);
+    Cypress.Product.addFromDetail();
+    Cypress.Cart.detailCart();
+    Cypress.Cart.remove(cart.item);
+    Cypress.Cart.continueShopping();
+    Cypress.Product.clickImage(cart.item);
+    Cypress.Cart.assertionDetail(cart.assertion);
   })
   
 })

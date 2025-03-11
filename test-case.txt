@@ -13,16 +13,15 @@ Product
 7. User Remove product dari cart di halaman detail product
 Cart
 
-1. User mengakses detail product dengan klik gambar di halaman detail cart
-2. User mengakses detail product dengan klik nama product di halaman detail cart
-3. User mengakses detail product dengan klik nama product di halaman checkout overview
-4. User mengakses detail cart
-5. User Remove product dari cart di halaman detail cart
-6. User kembali ke halaman list product dari detail cart
+1. User mengakses detail cart
+2. User mengakses detail product dari halaman detail cart
+3. User Remove product dari cart di halaman detail cart
+4. User kembali ke halaman list product dari detail cart
+5. User checkout product dari halaman cart
+6. User tidak bisa checkout product jika tidak ada product yang ditambahkan pada cart
 
 Checkout
-1. User checkoout product dari halaman detail cart
-2. User tidak bisa checkout product jika tidak ada product yang dutambahkan pada cart
+1. User mengakses detail product dengan klik nama product di halaman checkout overview
 
 Payment
 1. User menambahkan data pembayaran
