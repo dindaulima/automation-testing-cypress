@@ -1,37 +1,35 @@
 {
+    "product":
+    {
+        "name":"Sauce Labs Backpack",
+        "id":"sauce-labs-backpack"
+    },
     "pict_list_product":
     {
-        "item":"sauce-labs-backpack",
         "assertion":"Sauce Labs Backpack"
     },
     "name_list_product":
     {
-        "item":"Sauce Labs Backpack",
         "assertion":"Sauce Labs Backpack"
     },
     "back_to_list":
     {
-        "item":"Sauce Labs Backpack",
         "assertion":"Products"
     },
     "add_from_list":
     {
-        "item":"sauce-labs-backpack",
         "assertion":"Remove"
     },
     "add_from_detail":
     {
-        "item":"Sauce Labs Backpack",
         "assertion":"Remove"
     },
     "remove_from_list":
     {
-        "item":"sauce-labs-backpack",
         "assertion":"Add to cart"
     },
     "remove_from_detail":
     {
-        "item":"Sauce Labs Backpack",
         "assertion":"Add to cart"
     }
 

@@ -1,42 +1,28 @@
 class ProductsPage {
-    clickImage(item) {
-      cy.get(`[data-test="inventory-item-${item}-img"]`)
-        .should("be.visible")
-        .click();
+    clickImage(id) {
+      cy.clickButton(`inventory-item-${id}-img`);
     }
-    clickProductName(item) {
-      cy.get(`[data-test="inventory-item-name"]`)
-        .should("be.visible")
-        .contains(item)
-        .click();
+    clickProductName(name) {
+      cy.clickLink('inventory-item-name',name);
     }
     backToListProduct(){
-      cy.get(`[data-test="back-to-products"]`)
-      .should("be.visible")
-      .click();
+      cy.clickButton('back-to-products');
     }
-    addFromList(item) {
-      cy.get(`[data-test="add-to-cart-${item}"]`)
-        .should("be.visible")
-        .click();
+    addFromList(id) {
+      cy.clickButton(`add-to-cart-${id}`);
     }
     addFromDetail() {
-        cy.get(`[data-test="add-to-cart"]`)
-          .should("be.visible")
-          .click();
+      cy.clickButton('add-to-cart');
     }
-    removeFromList(item) {
-      cy.get(`[data-test="remove-${item}"]`)
-        .should("be.visible")
-        .click();
+    removeFromList(id) {
+      cy.clickButton(`remove-${id}`);
     }
     removeFromDetail() {
-      cy.get(`[data-test="remove"]`)
-        .should("be.visible")
-        .click();
+      cy.clickButton('remove');
+
     }
     assertionDetail(assertion) {
-      cy.contains(assertion, { timeout: 5000 }).should("be.visible");
+      cy.assertionDetail(assertion);
     }
   }
   

@@ -1,16 +1,23 @@
 {
+    "product":
+    {
+        "name":"Sauce Labs Backpack",
+        "id":"sauce-labs-backpack"
+    },
     "go_to_cart":
     {
         "assertion":"Your Cart"
     },
    "detail_product_from_cart":
     {
-        "item":"Sauce Labs Backpack",
         "assertion":"Back to products"
     },
     "remove_product_from_cart":
     {
-        "item":"sauce-labs-backpack",
         "assertion":"Add to cart"
+    },
+    "back_to_list_product":
+    {
+        "assertion": "Product"
     }
 }

@@ -1,27 +1,18 @@
 class CartPage {
     detailCart() {
-        cy.get(`[data-test="shopping-cart-link"]`)
-          .should("be.visible")
-          .click();
+      cy.clickButton('shopping-cart-link');
     }
-    clickProductName(item) {
-        cy.get(`[data-test="inventory-item-name"]`)
-          .should("be.visible")
-          .contains(item)
-          .click();
+    clickProductName(name) {
+      cy.clickLink('inventory-item-name',name);
     }
-    remove(item){
-        cy.get(`[data-test="remove-${item}"]`)
-        .should("be.visible")
-        .click(); 
+    remove(id){
+      cy.clickButton(`remove-${id}`);
     }
     continueShopping() {
-        cy.get(`[data-test="continue-shopping"]`)
-          .should("be.visible")
-          .click();
+      cy.clickButton('continue-shopping');
     }
     assertionDetail(assertion) {
-        cy.contains(assertion, { timeout: 5000 }).should("be.visible");
+      cy.assertionDetail(assertion);
     }
 }
 
