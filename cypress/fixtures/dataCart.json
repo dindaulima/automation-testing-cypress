@@ -19,5 +19,13 @@
     "back_to_list_product":
     {
         "assertion": "Product"
+    },
+    "checkout_succeed":
+    {
+        "assertion": "Checkout: Your Information"
+    },
+    "checkout_failed":
+    {
+        "assertion":"Your Cart"
     }
 }

@@ -49,5 +49,23 @@ describe('Detail Product', () => {
     Cypress.Cart.continueShopping();
     Cypress.Cart.assertionDetail(cart.assertion);
   })
+  it('5. User checkout product dari halaman cart', () => {
+    cart = dataCart.checkout_succeed;
+    product = dataCart.product;
+
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Product.addFromList(product.id);
+    Cypress.Cart.detailCart();
+    Cypress.Cart.checkout();
+    Cypress.Cart.assertionDetail(cart.assertion);
+  })
+  it('6. User tidak bisa checkout product jika tidak ada product yang ditambahkan pada cart', () => {
+    cart = dataCart.checkout_failed;
+
+    cy.userLogin(user.username, user.password, user.assertion);
+    Cypress.Cart.detailCart();
+    Cypress.Cart.checkout();
+    Cypress.Cart.assertionDetail(cart.assertion);
+  })
 })
 

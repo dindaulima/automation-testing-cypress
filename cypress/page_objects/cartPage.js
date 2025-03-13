@@ -11,6 +11,9 @@ class CartPage {
     continueShopping() {
       cy.clickButton('continue-shopping');
     }
+    checkout() {
+      cy.clickButton('checkout');
+    }
     assertionDetail(assertion) {
       cy.assertionDetail(assertion);
     }
