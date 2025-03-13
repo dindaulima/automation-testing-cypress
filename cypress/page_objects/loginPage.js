@@ -1,22 +1,18 @@
 class LoginPage {
     inputUsername(username) {
-      cy.get('[data-test="username"]')
-        .should("be.visible")
-        .type(username);
+      cy.inputText('username', username);
     }
+
     inputPassword(password) {
-      cy.get('[data-test="password"]')
-        .should("be.visible")
-        .type(password);
+      cy.inputText('password', password);
     }
+
     clickLogin() {
-      cy.get('[data-test="login-button"]')
-        .should("be.visible")
-        .contains("Login")
-        .click();
+      cy.clickButton('login-button');
     }
-    assertionLogin(assertion) {
-      cy.contains(assertion, { timeout: 5000 }).should("be.visible");
+
+    assertionDetail(assertion) {
+      cy.assertionDetail(assertion);
     }
   }
   

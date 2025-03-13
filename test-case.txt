@@ -11,17 +11,23 @@ Product
 5. User Add product ke cart dari halaman detail product [DONE]
 6. User Remove product dari cart di halaman list product [DONE]
 7. User Remove product dari cart di halaman detail product [DONE]
-Cart
 
+Cart
 1. User mengakses detail cart [DONE]
 2. User mengakses detail product dari halaman detail cart [DONE]
 3. User Remove product dari cart di halaman detail cart [DONE]
 4. User kembali ke halaman list product dari detail cart [DONE]
-5. User checkout product dari halaman cart
-6. User tidak bisa checkout product jika tidak ada product yang ditambahkan pada cart
+5. User checkout product dari halaman cart [DONE]
+6. User tidak bisa checkout product jika tidak ada product yang ditambahkan pada cart [DONE]
 
 Checkout
-1. User mengakses detail product dengan klik nama product di halaman checkout overview
+1. User menambahkan data payment [DONE]
+2. User batal checkout
+3. User tidak bisa checkout jika tidak mengisi First Name
+4. User tidak bisa checkout jika tidak mengisi Last Name
+5. User tidak bisa checkout jika tidak mengisi Zip/Postal Code
+
+User mengakses detail product dengan klik nama product di halaman checkout overview
 
 Payment
 1. User menambahkan data pembayaran

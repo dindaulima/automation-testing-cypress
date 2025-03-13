@@ -2,7 +2,13 @@ Cypress.Commands.add("userLogin", (username, password, assertion) => {
     Cypress.Login.inputUsername(username);
     Cypress.Login.inputPassword(password);
     Cypress.Login.clickLogin();
-    Cypress.Login.assertionLogin(assertion);
+    Cypress.Login.assertionDetail(assertion);
+});
+
+Cypress.Commands.add("inputText", (selector, text) => {
+    cy.get(`[data-test="${selector}"]`)
+        .should("be.visible")
+        .type(text);
 });
 
 Cypress.Commands.add("clickButton", (selector) => {

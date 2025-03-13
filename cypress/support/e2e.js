@@ -3,12 +3,14 @@ import IndexPage from "../page_objects/indexPage";
 import LoginPage from "../page_objects/loginPage";
 import ProductsPage from "../page_objects/productsPage";
 import CartPage from "../page_objects/cartPage";
+import CheckoutPage from "../page_objects/checkoutPage";
 
 const Index = new IndexPage();
 
 Cypress.Login = new LoginPage();
 Cypress.Product = new ProductsPage();
 Cypress.Cart = new CartPage();
+Cypress.Checkout = new CheckoutPage();
 
 const executedTests = new Set();
 
