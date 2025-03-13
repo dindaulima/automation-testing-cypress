@@ -1,0 +1,22 @@
+{
+    "product":
+    {
+        "name":"Sauce Labs Backpack",
+        "id":"sauce-labs-backpack"
+    },
+    "payment_information":
+    {
+        "first_name":"John",
+        "last_name":"Doe",
+        "postal_code":"60001"
+    },
+    "finish_payment":{
+        "assertion":"Thank you for your order!"
+    },
+    "cancel_payment":{
+        "assertion":"Products"
+    },
+    "back_to_products":{
+        "assertion":"Products"
+    }
+}

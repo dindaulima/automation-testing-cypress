@@ -1,8 +1,4 @@
 class CheckoutPage {
-    detailCart() {
-      cy.clickButton('shopping-cart-link');
-    }
-
     cancel(){
       cy.clickButton('cancel');
     }
@@ -21,6 +17,14 @@ class CheckoutPage {
 
     inputPostalCode(postalCode) {
       cy.inputText('postalCode', postalCode);
+    }
+
+    finish() {
+      cy.clickButton('finish');
+    }
+
+    backToProducts() {
+      cy.clickButton('bactk-to-products');
     }
 
     assertionDetail(assertion) {

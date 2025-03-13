@@ -29,9 +29,5 @@
     "cancel_checkout":
     {
         "assertion":"Your Cart"
-    },
-    "go_to_cart":
-    {
-        "assertion":"Your Cart"
     }
 }

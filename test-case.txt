@@ -21,16 +21,13 @@ Cart
 6. User tidak bisa checkout product jika tidak ada product yang ditambahkan pada cart [DONE]
 
 Checkout
-1. User menambahkan data payment [DONE]
-2. User batal checkout
-3. User tidak bisa checkout jika tidak mengisi First Name
-4. User tidak bisa checkout jika tidak mengisi Last Name
-5. User tidak bisa checkout jika tidak mengisi Zip/Postal Code
-
-User mengakses detail product dengan klik nama product di halaman checkout overview
+1. User berhasil checkout [DONE]
+2. User tidak bisa checkout jika tidak mengisi First Name [DONE]
+3. User tidak bisa checkout jika tidak mengisi Last Name [DONE]
+4. User tidak bisa checkout jika tidak mengisi Zip/Postal Code [DONE]
+5. User batal checkout [DONE]
 
 Payment
-1. User menambahkan data pembayaran
-2. User menyelesaikan pembayaran
-3. User membatalkan pembayaran
-4. User kembali ke halaman list product setelah menyelesaikan pembayaran
+1. User menyelesaikan pembayaran [DONE]
+2. User batal checkout di halaman pembayaran [DONE]
+3. User kembali ke beranda setelah menyelesaikan pesanan [DONE]
