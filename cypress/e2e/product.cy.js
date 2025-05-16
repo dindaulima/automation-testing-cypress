@@ -72,7 +72,6 @@ describe('Detail Product', () => {
     cy.userLogin(user.username, user.password, user.assertion);
     Cypress.Product.clickProductName(product.name);
     Cypress.Product.addFromDetail();
-    Cypress.Product.clickProductName(product.name);
     Cypress.Product.removeFromDetail();
     Cypress.Product.assertionDetail(testData.assertion);
   })
